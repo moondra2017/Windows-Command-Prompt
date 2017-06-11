@@ -15,6 +15,8 @@ dir  #dir of current directory
 
 dir  /a   #hidden directory
 
+#dir#
+
 dir /ad  # output all subfolders within directory
 
 dir  *.txt   # output all text files within directory
