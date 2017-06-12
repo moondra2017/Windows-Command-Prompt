@@ -4,7 +4,7 @@ Useful Commands
 
 
 
-#CD#
+# CD
 
 cd..
 cd..\..
@@ -14,7 +14,7 @@ cd ' next directory name'
 cd 'directory'\'next directory'  
 #cd Moondra\documents
 
-DIR
+# DIR
 
 dir  #dir of current directory
 
@@ -35,7 +35,7 @@ dir /s biotech.text   #searches for biotech.txt within system
 
 
 
-output
+# Output
 
 
 dir > hello.txt    (output comannd `dir`'s output into hello.txt
@@ -45,7 +45,7 @@ type hello.txt   (print out hello.txt contents in command line)
 type biotech.text > hello.txt  (copy the contents of biotech.text > hello.txt)
 
 
-open files
+# Open Files
 
 notepad dir.txt (use notepad to open dir.txt)
 
@@ -54,3 +54,16 @@ dir.txt  (dir.txt opened by default program)
 EXEL.png (image file opened by default program)
 
 mspaint
+
+calc
+
+
+# Make and delete directories
+
+
+mkdir   test_folder
+rmdir   test_folder
+
+mkdir  apple\apple2     (make a directory with subdirectory)
+
+rmdir  /s apple   (remove directory with subdirectory)
