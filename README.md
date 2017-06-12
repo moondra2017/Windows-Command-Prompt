@@ -62,6 +62,7 @@ calc
 
 
 mkdir   test_folder
+
 rmdir   test_folder
 
 mkdir  apple\apple2     (make a directory with subdirectory)
