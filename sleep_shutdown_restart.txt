@@ -1,0 +1,47 @@
+SHUTDOWN RESTART
+
+shutdown -r 			— restarts  (you have one minute)
+shutdown -s 			— shutsdown
+shutdown -l 			— logoff
+shutdown -s(or -r) -t xx 	- where xx is number of seconds to wait till shutdown/restart/logoff
+
+shutdown -a 			— aborts the previous shutdown command
+shutdown -h 			— hibernate
+
+
+
+Unfortunately no sleep command.
+There are work arounds:
+
+1) 
+
+powercfg -h off          #turns hibernation off necessary for the next command to work
+rundll32.exe powrprof.dll,SetSuspendState 0,1,0   #sleeps
+
+ #if you want to turn hibernation mode back on    powercfg -h on 
+
+2)
+
+psshutdown -d -t 20 (20 seconds before sleep)
+psshutdown -d -t 0  (O seconds before sleep) 
+
+
+psShutdown download link:
+
+https://technet.microsoft.com/en-us/sysinternals/bb897541.aspx
+
+
+So besides psshutdown and rundll32.exe powrprof.dll,SetSuspendState 0,1,0
+
+there are two other popular methods to access the sleep command from the command prompt
+
+
+nirmcd standby
+
+
+http://www.nirsoft.net/
+
+vizmo standby
+
+https://www.grc.com/wizmo/wizmo.htm
+`
